@@ -31,7 +31,7 @@ def compute_normals(depth,
         depth_factor = meta_data['camera_scale']
 
     depth = depth.astype(np.double)
-    normals = oriented_features_c.compute_normals(depth, fx, fy, cx, cy,
+    normals = range_image_proc_c.compute_normals(depth, fx, fy, cx, cy,
                                                   method,
                                                   depth_change_factor,
                                                   smoothing_size,
